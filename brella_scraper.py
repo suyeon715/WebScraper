@@ -25,7 +25,7 @@ time.sleep(3)
 
 # Step 2: Enter Email
 email_input = WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.NAME, "email")))
-email_input.send_keys("brian.ohlhausen@colcap.com")  # Replace with actual email
+email_input.send_keys("Replace with actual email")  # Replace with actual email
 
 # Click 'Continue with email'
 continue_button = WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.XPATH, '//button[@data-test="submit-button"]')))
@@ -33,7 +33,7 @@ continue_button.click()
 
 # Step 3: Enter Password
 password_input = WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//input[@data-test="password-input"]')))
-password_input.send_keys("o9xH@hL6L2kb")  # Replace with actual password
+password_input.send_keys("Replace with actual password")  # Replace with actual password
 
 # Click 'Sign in'
 login_button = WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.XPATH, '//button[@data-test="submit-button"]')))
